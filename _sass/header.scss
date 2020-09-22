@@ -1,33 +1,16 @@
 header {
   padding: 0;
-  margin: 0;
+  margin: 1em 0;
   color: $header-color;
   background-color: #fff;
-}
-
-header nav {
-  display: flex;
-  justify-content: center;
-  justify-content: space-between;
-  align-items:center;
-  align-content: center;
-  margin: 0;
-  padding: 0;
-  border: 0;
 }
 
 header nav img {
   height: 36px;
 }
-header div.image img {
-  width: 100%;
-}
 
 header ul {
   list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 header ul li {
   text-align: center;
@@ -37,17 +20,17 @@ header ul li a {
   display: block;
   margin: 0;
   font-weight: 400;
-  padding: 1.6em;
+  padding: 1em;
   text-decoration: none;
   border-bottom: 2px solid #fff;
 }
 header ul li a.logo {
   padding: 0 2em;
 }
+
 header ul li a.menuitem:hover {
   color: $dark-header-color;
   text-decoration: none;
-  border-bottom: 2px solid $dark-header-color;
 }
 
 header ul li a.cta, header ul li a.login {
@@ -80,17 +63,15 @@ header ul li a.login:hover {
 header div.hero-module {
   background-color: $dark-header-color;
   background-color: #dae1e9;
-  padding: 2em 0;
+  padding: 1em;
 }
 header div.hero-module > div {
-  color: #fff;
-  margin: 0 auto;
-  width: 1180px;
+  margin: 0;
 }
 
 header div.hero-module h1 {
-  text-transform: uppercase;
-  text-transform: capitalize;
+  line-height: 1em;
+  margin: 0;
 }
 
 header div.header-post {
@@ -109,6 +90,7 @@ header div.header-post h1 {
 header h1 {
   color: $header-color;
   font-size: 3.4em;
+  line-height: 1em;
   margin: 1em 0;
 }
 
@@ -120,4 +102,52 @@ header h2 {
 
 header h2 span {
   color: $header-color;
+}
+
+@media only screen and (min-width: 700px) {
+
+header {
+  padding: 0;
+  margin: 0;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items:center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header ul li a {
+  padding: 1.6em;
+}
+
+header ul li a.menuitem:hover {
+  border-bottom: 2px solid $dark-header-color;
+}
+
+
+header div.hero-module {
+  background-color: $dark-header-color;
+  background-color: #dae1e9;
+  padding: 2em 0;
+}
+header div.hero-module > div {
+  color: #fff;
+  margin: 0 auto;
+  width: 1180px;
+}
+
+header div.hero-module h1 {
+  text-transform: uppercase;
+  text-transform: capitalize;
+}
+
 }
